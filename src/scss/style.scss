@@ -1,0 +1,15 @@
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+// @import "./node_modules/swiper/swiper.scss";
+// @import "swiper/css";
+@import "reset";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+@import "../components/Header/Header";
+@import "../components/Footer/Footer";
+
+// @import "../components/**/*.scss";
+// @import "../layouts/**/*.scss";
+// @import "../pages/**/*.scss";
