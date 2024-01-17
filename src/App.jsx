@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 // import { Swiper, SwiperSlide } from "swiper/react";
-import "../src/scss/base/style.scss";
+import "../src/styles/base/style.scss";
 import Template from "./components/Template";
 
 function App() {
