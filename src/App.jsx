@@ -1,12 +1,14 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // import { Swiper, SwiperSlide } from "swiper/react";
-import "./scss/style.scss";
+import "../src/scss/base/style.scss";
+import Template from "./components/Template";
 
 function App() {
   return (
     <>
       <Header />
+      <Template/>
       <Footer />
     </>
   );

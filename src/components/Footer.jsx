@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>it is footer</p>
+        <p>component: Footer</p>
       </div>
     </footer>
   );

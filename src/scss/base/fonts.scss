@@ -15,15 +15,4 @@
 // 800 Extra Bold
 // 900 Ultra Bold
 
-@mixin font-weight($weight: 400, $format: $file-format) {
-  font-weight: $weight;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  font-family: $default-font;
-  @include font-face(
-    $default-font,
-    $addr + "Roboto-Regular/Roboto-Regular",
-    $format
-  );
-}
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,700;0,6..12,800;1,6..12,600&display=swap");
