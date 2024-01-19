@@ -12,7 +12,7 @@ program
 const componentName =
   capitalizeFirstLetter(program.args[0]) || "DefaultComponent";
 
-const componentDirectory = path.join("src", "components");
+const componentDirectory = path.join("src", "components", componentName);
 
 // Создаем директорию для компонента, если ее нет
 if (!fs.existsSync(componentDirectory)) {
@@ -38,12 +38,12 @@ if (program.styles || program.rawArgs.includes("-s")) {
   const scssContent = `.${componentName.toLowerCase()} {
     
 }`;
-  const scssFilePath = path.join("src", "scss", `${componentName}.scss`);
+  const scssFilePath = path.join(componentDirectory, `${componentName}.scss`);
   fs.writeFileSync(scssFilePath, scssContent);
 
   // Импортируем компонент в style.scss
   const styleFilePath = path.join("src", "scss", "base", "style.scss");
-  const importStatement = `@import './${componentName}.scss';\n`;
+  const importStatement = `@import '../../components/${componentName}/${componentName}.scss';\n`;
 
   if (!fs.readFileSync(styleFilePath, "utf-8").includes(importStatement)) {
     fs.appendFileSync(styleFilePath, importStatement);
