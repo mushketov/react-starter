@@ -39,6 +39,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+test.md
 
 # External tool builders
 .externalToolBuilders/
