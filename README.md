@@ -3,6 +3,14 @@
 ```
 npm start
 ```
+создать компонент
+```
+node create <name>
+```
+создать компонент со стилями
+```
+node create <name> -s
+```
 
 ## react-toastify
 
